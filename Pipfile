@@ -8,7 +8,6 @@ verify_ssl = true
 [packages]
 flask = "*"
 requests = "*"
-python-dotenv = "*"
 bs4 = "*"
 selenium = "*"
 webdriver-manager = "*"
@@ -18,6 +17,7 @@ langchain-openai = "*"
 langchain-community = "*"
 langchainhub = "*"
 black = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.9"
