@@ -17,10 +17,7 @@ if __name__ == "__main__":
 
     llm = ChatOpenAI(temperature=0, model_name="gpt-4o-mini-2024-07-18")
     chain = summary_prompt_template | llm | StrOutputParser()
-    linkedin_data = scrape_linkedin_profile("https://www.linkedin.com/in/kcrommelin/", mock=True)
+    linkedin_data = scrape_linkedin_profile("https://www.linkedin.com/in/rachelunderbakke/", mock=False)
 
     res = chain.invoke(input={"information":linkedin_data})
     print(res)
-
-
-    
